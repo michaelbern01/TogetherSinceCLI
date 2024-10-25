@@ -2,12 +2,19 @@
 #ifndef DATE_CALCULATOR_H
 #define DATE_CALCULATOR_H
 
-#define WEDDING_YEAR 2018
-#define WEDDING_MONTH 7
-#define WEDDING_DAY 22
+#include <time.h>  // Include time.h for struct tm
 
-// Function to calculate the difference in days from the wedding date
-int calculate_days_since_wedding();
+// Define the starting date of the relationship and wedding date
+#define TOGETHER_YEAR 2018
+#define TOGETHER_MONTH 7
+#define TOGETHER_DAY 22
+
+#define WEDDING_YEAR 2022
+#define WEDDING_MONTH 10
+#define WEDDING_DAY 17
+
+// Function prototypes
+int calculate_days_since(struct tm start_date);
+void calculate_years_months_days_since(struct tm start_date);
 
 #endif
-
